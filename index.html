@@ -97,10 +97,10 @@
 								<!--<img
 									src="img/pic2.jpg"
 									width="200" height="224" align="right" />-->
-								<img id="myImg" src="img/pic2.jpg" alt="My pic" align="right" style="width:500%;max-width:200px;max-height: 224px">
+								<img id="myImg" src="img/pic2.jpg" alt="" align="right" style="max-width:200px;max-height: 224px">
 								<!-- The Modal -->
-								<div id="myModal" class="modal">
-								  <span class="close">&times;</span>
+								<div id="myImgModal" class="modal">
+								  <span id="cls01" class="close">&times;</span>
 								  <img class="modal-content" id="img01">
 								  <div id="caption"></div>
 								</div>
@@ -382,9 +382,16 @@
 						</div>
 						<div class="l_item">
 							<div class="left_wrapper">
-								<img class="l_thumbnail img-thumbnail img-responsive"
+								<!--<img class="l_thumbnail img-thumbnail img-responsive"
 									src="robots/controller.jpg"
-									data-recalc-dims="1" />
+									data-recalc-dims="1" />-->
+								<img class="l_thumbnail img-thumbnail img-responsive" id="controller" src="robots/controller.jpg" alt="Robotic Arm Software Controller" />
+								<!-- The Modal -->
+								<div id="controllerModal" class="modal">
+								  <span id="cls02" class="close">&times;</span>
+								  <img id="img02" class="modal-content">
+								  <div id="caption2"></div>
+								</div>
 							</div>
 							<div class="right_wrapper">
 								<h3 class="l_title">
@@ -504,26 +511,51 @@
 	</div>
 
 		<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
+			// Get myImg modal
+			var myImgModal = document.getElementById("myImgModal");
 
 			// Get the image and insert it inside the modal - use its "alt" text as a caption
 			var img = document.getElementById("myImg");
-			var modalImg = document.getElementById("img01");
+			var modalImg1 = document.getElementById("img01");
 			var captionText = document.getElementById("caption");
 			img.onclick = function(){
-				modal.style.display = "block";
-				modalImg.src = this.src;
+				myImgModal.style.display = "block";
+				modalImg1.src = this.src;
 				captionText.innerHTML = this.alt;
 			}
 
 			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
+			//var span = document.getElementsByClassName("close")[0];
+			var span = document.getElementById("cls01");
 
 			// When the user clicks on <span> (x), close the modal
 			span.onclick = function() { 
-				modal.style.display = "none";
+				myImgModal.style.display = "none";
 			}
+      
+			
+			// Get controller modal
+			var controllerModal = document.getElementById("controllerModal");
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var controllerImg = document.getElementById("controller");
+			var modalImg2 = document.getElementById("img02");
+			var captionText2 = document.getElementById("caption2");
+			controllerImg.onclick = function(){
+				controllerModal.style.display = "block";
+				modalImg2.src = this.src;
+				captionText2.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var spanController = document.getElementById("cls02");
+
+			// When the user clicks on <span> (x), close the modal
+			spanController.onclick = function() { 
+				controllerModal.style.display = "none";
+			}
+			
+
 	</script>
 </body>
 </html>
