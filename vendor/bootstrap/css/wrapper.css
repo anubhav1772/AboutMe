@@ -1,0 +1,40 @@
+.left_wrapper {
+	float: left;
+	width: 26%;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+
+.right_wrapper {
+	float: left;
+	width: 70%;
+}
+
+.l_thumbnail {
+	width: 100%;
+
+}
+
+.l_desc {
+	text-align: justify;
+	font-size: 20px;
+}
+
+.l_title {
+	font-size: 20px;
+}
+
+.exp_title {
+	font-size: 16px;
+}
+
+.exp_desc {
+	text-align: justify;
+	font-size: 16px;
+}
+
+.l_item {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 20px;
+}
