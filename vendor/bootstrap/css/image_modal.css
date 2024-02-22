@@ -93,3 +93,19 @@
 }
 
 #controller: hover {opacity: 0.7;}
+
+#seg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#seg: hover {opacity: 0.7;}
+
+#stats {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#stats: hover {opacity: 0.7;}
