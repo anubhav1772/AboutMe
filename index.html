@@ -443,6 +443,45 @@
          </div>
          <div class="l_item">
             <div class="left_wrapper">
+               <!--<img class="l_thumbnail img-thumbnail img-responsive"
+                  src="robots/controller.jpg"
+                  data-recalc-dims="1" />-->
+               <img class="l_thumbnail img-thumbnail img-responsive" id="controller" src="robots/arm_octomap.jpg" alt="" />
+               <!-- The Modal -->
+               <div id="controllerModal" class="modal">
+                  <span id="cls04" class="close">&times;</span>
+                  <img id="img04" class="modal-content">
+                  <div id="caption4"></div>
+               </div>
+            </div>
+            <div class="right_wrapper">
+               <h3 class="l_title">
+                  <a href="https://github.com/anubhav1772/6-dof-robotic-arm"
+                     title="Robotic Arm Simulation"
+                     target="_blank">6-DOF Robotic Arm Simulation</a><br />
+               </h3>
+               <iframe src="https://ghbtns.com/github-btn.html?user=anubhav1772&repo=6-dof-robotic-arm&type=star&count=true&size=large" 
+                  frameborder="0"
+                  scrolling="0"
+                  width="170"
+                  height="30"
+                  title="GitHub">
+               </iframe>
+               <iframe src="https://ghbtns.com/github-btn.html?user=anubhav1772&repo=6-dof-robotic-arm&type=fork&count=true&size=large" 
+                  frameborder="0"
+                  scrolling="0"
+                  width="170"
+                  height="30"
+                  title="GitHub">
+               </iframe>
+               <p class="l_desc">
+                  In this project, I implemented a pick-and-place action using a 6-DOF robotic arm, leveraging the   <a href="https://octomap.github.io/">octomap</a> framework. Data from an RGBD camera sensor is used to build a 3D model of the environment around the robotic arm using the ROS octomap library. MoveIt checks for collisions between the robot and the octomap, and generates a motion plan failure if it detects a potential collision. To successfully perform the pick-and-place task, we need to add the object to the planning scene interface to deactivate collision checking between the gripper and the object. Additionally, we must attach the grasped object to the gripper so that MoveIt considers it during collision checking.
+               </p>
+               </p>
+            </div>
+         </div>
+         <div class="l_item">
+            <div class="left_wrapper">
                <!-- <img class="l_thumbnail img-thumbnail img-responsive"
                   src="img/mrkbsk.jpg" /> -->
                   <object data="doc/BTECH18_THESIS.pdf" type="application/pdf" width="100%" height="365px">
