@@ -102,6 +102,14 @@
 
 #seg: hover {opacity: 0.7;}
 
+#octomap {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#octomap: hover {opacity: 0.7;}
+
 #stats {
 	border-radius: 5px;
 	cursor: pointer;

@@ -20,3 +20,4 @@ function setupModal(imgId, modalId, modalImgId, captionId) {
 setupModal("myImg", "myImgModal", "img01", "caption");
 setupModal("controller", "controllerModal", "img02", "caption2");
 setupModal("seg", "segModal", "img03", "caption3");
+setupModal("octomap", "octomapModal", "img04", "caption4");
