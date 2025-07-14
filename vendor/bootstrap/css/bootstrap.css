@@ -567,7 +567,11 @@ html {
     margin: 40px 0 20px;
     border-bottom: 1px solid #eee;
   }
-  ul,
+  /*ul,*/
+  ul {
+  padding-left: 20px; /* increase or decrease as needed */
+  list-style-type: disc; /* or 'circle', 'square', or 'none' */
+  }
   ol {
     margin-top: 0;
     margin-bottom: 10px;
