@@ -490,8 +490,16 @@
             <div class="left_wrapper">
               <!-- <object data="doc/BTECH18_THESIS.pdf" type="application/pdf" width="100%" height="365px">
               </object> -->
-              <iframe name="myiframe" id="contentiframe" style='width: 100%; margin-left: 0px; height: 365px; border: thin solid rgb(153, 153, 153);' frameborder="0" marginheight="0" marginwidth="0" src="doc/BTECH18_THESIS.pdf#toolbar=0">loading...
-              </iframe>
+              <!-- <iframe name="myiframe" id="contentiframe" style='width: 100%; margin-left: 0px; height: 365px; border: thin solid rgb(153, 153, 153);' frameborder="0" marginheight="0" marginwidth="0" src="doc/BTECH18_THESIS.pdf#toolbar=0">loading...
+              </iframe> -->
+              <div style="position: relative; width: 100%; height: 365px;">
+                 <iframe name="myiframe" id="contentiframe" 
+                   style="width: 100%; height: 100%; border: thin solid #999;" 
+                   frameborder="0" 
+                   src="doc/BTECH18_THESIS.pdf#toolbar=0&navpanes=0&scrollbar=0">
+                 </iframe>
+                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 30px; background: transparent; z-index: 2;"></div>
+               </div>
             </div>
             <div class="right_wrapper">
                <h3 class="l_title">
